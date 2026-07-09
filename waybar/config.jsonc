@@ -4,7 +4,7 @@
   "height": 30,
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["hyprland/window"],
-  "modules-right": ["network", "cpu", "memory", "pulseaudio", "clock", "tray"],
+  "modules-right": ["network", "custom/netspeed", "cpu", "memory", "pulseaudio", "clock", "tray"],
   "hyprland/workspaces": {
     "format": "{name}",
     "on-click": "activate"
@@ -23,15 +23,20 @@
   },
   "network": {
     "format": "{ifname}",
-    "format-wifi": "{icon} {signalStrength}%",
-    "format-ethernet": "{icon}",
+    "format-wifi": "{icon}  {essid}  {ipaddr}",
+    "format-ethernet": "{icon}  {ipaddr}",
     "format-disconnected": "",
     "format-icons": ["", "", "", "", ""],
     "tooltip-format": "{ifname} via {gwaddr}",
-    "tooltip-format-wifi": "{essid} ({signalStrength}%)",
-    "tooltip-format-ethernet": "{ifname}",
+    "tooltip-format-wifi": "{essid}  {signalStrength}%  {ipaddr}",
+    "tooltip-format-ethernet": "{ifname}  {ipaddr}",
     "tooltip-format-disconnected": "Disconnected",
     "on-click": "nm-connection-editor"
+  },
+  "custom/netspeed": {
+    "exec": "$HOME/.config/hyprdots/scripts/netspeed.sh",
+    "interval": 2,
+    "tooltip": false
   },
   "cpu": {
     "format": "CPU {usage}%",
