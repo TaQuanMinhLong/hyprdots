@@ -30,11 +30,10 @@
     "tooltip-format": "{ifname} via {gwaddr}",
     "tooltip-format-wifi": "{essid}  {signalStrength}%  {ipaddr}",
     "tooltip-format-ethernet": "{ifname}  {ipaddr}",
-    "tooltip-format-disconnected": "Disconnected",
-    "on-click": "nm-connection-editor"
+    "tooltip-format-disconnected": "Disconnected"
   },
   "custom/netspeed": {
-    "exec": "$HOME/.config/hyprdots/scripts/netspeed.sh",
+    "exec": "/home/taquanminhlong/.config/hyprdots/scripts/netspeed.sh",
     "interval": 2,
     "tooltip": false
   },
