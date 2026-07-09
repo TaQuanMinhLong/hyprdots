@@ -28,9 +28,10 @@ hl.monitor({
 ---------------------
 
 -- Set programs that you use
-local terminal    = "kitty"
-local fileManager = "dolphin"
-local browser     = "firefox"
+-- Uses env var if set, otherwise falls back to configured default
+local terminal    = os.getenv("TERMINAL") or "kitty"
+local fileManager = os.getenv("FILE_MANAGER") or "dolphin"
+local browser     = os.getenv("BROWSER") or "firefox"
 local menu        = "hyprlauncher"
 
 
@@ -72,6 +73,7 @@ hl.env("GTK_THEME", "Adwaita:dark")
 hl.env("QT_QPA_PLATFORMTHEME", "qt5ct")
 hl.env("QT_STYLE_OVERRIDE", "adwaita-dark")
 hl.env("BROWSER", browser)
+hl.env("TERMINAL", terminal)
 
 -----------------------
 ----- PERMISSIONS -----
