@@ -6,8 +6,15 @@
   "modules-center": ["hyprland/window"],
   "modules-right": ["network", "custom/netspeed", "cpu", "memory", "pulseaudio", "clock", "tray"],
   "hyprland/workspaces": {
-    "format": "{name}",
-    "on-click": "activate"
+    "format": "{id}",
+    "on-click": "activate",
+    "persistent_workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": []
+    }
   },
   "clock": {
     "interval": 60,
