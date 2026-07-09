@@ -42,11 +42,13 @@
   },
   "cpu": {
     "format": "CPU {usage}%",
+    "on-click": "missioncenter",
     "tooltip": false,
     "interval": 5
   },
   "memory": {
     "format": "RAM {percentage}%",
+    "on-click": "missioncenter",
     "tooltip": true,
     "interval": 5
   },

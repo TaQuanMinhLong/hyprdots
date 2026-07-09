@@ -32,6 +32,7 @@ hl.monitor({
 local terminal    = os.getenv("TERMINAL") or "kitty"
 local fileManager = os.getenv("FILE_MANAGER") or "dolphin"
 local browser     = os.getenv("BROWSER") or "firefox"
+local taskManager = "missioncenter"
 local menu        = "hyprlauncher"
 
 
@@ -344,6 +345,7 @@ hl.bind(mainMod .. " + SHIFT + H", hl.dsp.exec_cmd("hyprshade toggle"))
 
 -- Windows-like keybinds
 hl.bind("ALT + F4", hl.dsp.window.close())
+hl.bind("CTRL + SHIFT + Escape", hl.dsp.exec_cmd(taskManager))
 hl.bind(mainMod .. " + D", hl.dsp.workspace.toggle_special("desktop"))
 hl.bind(mainMod .. " + Escape", hl.dsp.exec_cmd("wlogout -b 4"))
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock"))
