@@ -1,0 +1,50 @@
+* {
+  all: unset;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 13px;
+}
+
+.notification-row {
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+.notification {
+  background: rgba(30, 30, 46, 0.95);
+  border: 1px solid rgba(69, 71, 90, 0.8);
+  border-radius: 10px;
+  margin: 6px 12px;
+  padding: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.notification-content {
+  background: transparent;
+  padding: 10px;
+}
+
+.title {
+  color: #cdd6f4;
+  font-weight: bold;
+}
+
+.body {
+  color: #bac2de;
+}
+
+.control-center {
+  background: rgba(24, 24, 37, 0.97);
+  border: 1px solid rgba(69, 71, 90, 0.8);
+  border-radius: 12px;
+  margin: 8px;
+  padding: 12px;
+}
+
+.control-center-dnd {
+  color: #cdd6f4;
+}
+
+.floating-notifications {
+  background: transparent;
+}
