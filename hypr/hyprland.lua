@@ -29,7 +29,7 @@ hl.monitor({
 
 -- Set programs that you use
 -- Uses env var if set, otherwise falls back to configured default
-local terminal    = os.getenv("TERMINAL") or "kitty"
+local terminal    = os.getenv("TERMINAL") or "ghostty"
 local fileManager = os.getenv("FILE_MANAGER") or "dolphin"
 local browser     = os.getenv("BROWSER") or "firefox"
 local taskManager = "missioncenter"
