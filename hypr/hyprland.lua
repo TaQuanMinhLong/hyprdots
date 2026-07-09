@@ -49,6 +49,8 @@ hl.on("hyprland.start", function ()
   hl.exec_cmd("udiskie")
   hl.exec_cmd("snappy-switcher --daemon")
   hl.exec_cmd("wl-paste --watch cliphist store")
+  hl.exec_cmd("gsettings set org.gnome.desktop.interface gtk-theme Adwaita")
+  hl.exec_cmd("gsettings set org.gnome.desktop.interface color-scheme prefer-dark")
 end)
 
 
