@@ -6,15 +6,11 @@
   "modules-center": ["hyprland/window"],
   "modules-right": ["network", "custom/netspeed", "cpu", "memory", "pulseaudio", "clock", "tray"],
   "hyprland/workspaces": {
-    "format": "{id}",
-    "on-click": "activate",
-    "persistent_workspaces": {
-      "1": [],
-      "2": [],
-      "3": [],
-      "4": [],
-      "5": []
-    }
+    "format": "{name}",
+    "on-click": "activate"
+    // TODO: Clicking workspace buttons is broken with Waybar 0.15 + Hyprland 0.55 Lua.
+    // Tracked upstream: https://github.com/Alexays/Waybar/issues/5035
+    // Fix once waybar releases an update or switch to waybar-git from AUR.
   },
   "clock": {
     "interval": 60,
